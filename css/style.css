@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
 
-    background-image: url("/image/template-background.jpg");
+    background-image: url("image/template-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,3 +162,4 @@ footer {
         margin-right: 0;
     }
 }
+
