@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Website for Introduction</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+
+            background-image: url("/image/template-background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px 15px;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 35px 70px rgba(0,0,0,0.5);
+        }
+
+
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 5px solid #2a5298;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile h1 {
+            font-size: 28px;
+            color: #1e3c72;
+        }
+
+        .profile h2 {
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            color: #2a5298;
+            margin-bottom: 10px;
+            border-left: 6px solid #2a5298;
+            padding-left: 12px;
+        }
+
+        .section p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            color: #333;
+            background: #f3f6fb;
+            padding: 6px 10px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+
+        a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        .experience img {
+            width: 100%;
+            max-width: 450px;
+            margin-top: 15px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: block;
+        }
+
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+            font-size: 14px;
+        }
+
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            .profile h1 {
+                font-size: 22px;
+            }
+
+            .section h3 {
+                font-size: 18px;
+            }
+
+            ul li {
+                display: block;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <img src="/image/profile.jpg" alt="profile">
+        <h1>ณัฐกฤษ พุ่มบาง</h1>
+        <h2>นักศึกษา วิศวกรรมสารสนเทศและเครือข่าย</h2>
+    </div>
+
+    <div class="section">
+        <h3>Objectives of the internship</h3>
+        <p>
+            To apply knowledge of problem solving and systems analysis to develop an efficient
+            information infrastructure and network for the organization.
+        </p>
+    </div>
+
+    <div class="section education">
+        <h3>Education</h3>
+        <p>
+            2022 - 2024<br>
+            BanKhai Technical College 🏫<br>
+            Higher Vocational Certificate<br>
+            Information Technology and IoT<br>
+            GPA: 3.83
+        </p>
+        <p>
+            2024 - Present<br>
+            King Mongkut's University of Technology North Bangkok 🏫<br>
+            Industrial Technology and Management<br>
+            Information and Network Engineering<br>
+            GPA: 2.89 (from 3 semesters)
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML / CSS 💻</li>
+            <li>JAVA 🍵</li>
+            <li>Python 🐍</li>
+            <li>Figma 🖥️</li>
+            <li>Cisco Packet Tracer 🛜</li>
+            <li>Android Studio 📱</li>
+            <li>AI skills 🤖</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Interest</h3>
+        <ul>
+            <li>Cyber Security 🚨</li>
+            <li>Web Application 👾</li>
+            <li>Cloud Computing 💭</li>
+            <li>Networking 🛜</li>
+            <li>DevOps 🧑‍💻</li>
+        </ul>
+    </div>
+
+    <div class="section experience">
+        <h3>Experience</h3>
+        <p>
+            2023 (1 year) and 2026 (1 year)<br>
+            Yaokun Machinery Co., Ltd.<br>
+            Position: Production & HR Support<br>
+            Assistance with various documents & troubleshooting, IT consulting.
+        </p>
+        <img src="/image/expreience.jpg" alt="experience">
+    </div>
+
+    <div class="section">
+        <h3>Contact</h3>
+        <p>
+            Email: <a href="mailto:nattakit.it004@gmail.com">nattakit.it004@gmail.com</a><br>
+            Facebook: <a href="https://www.facebook.com/nattakit.pumbang/?locale=th_TH" target="_blank">Nattakit Pumbang</a><br>
+            GitHub: <a href="https://github.com/Nattakit-p" target="_blank">Nattakit-p</a><br>
+            Phone: 061-282-7879
+        </p>
+    </div>
+
+    <footer>
+        © 2026 My Introduction Website
+    </footer>
+
+</div>
+
+</body>
+</html>
